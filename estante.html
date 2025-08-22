@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estante Virtual</title>
+    <link rel="stylesheet" href="./css/estante.css">
+   
+</head>
+<body>
+    <!-- Seção Hero -->
+    <section class="hero-section">
+        <div class="floating-particles">
+            <!-- <div class="book">📖</div>
+            <div class="book">📖</div>
+            <div class="book">📖</div>
+            <div class="book">📖</div>
+            <div class="book">📖</div>
+            <div class="book">📖</div>
+            <div class="book">📖</div>
+            <div class="book">📖</div> -->
+
+        </div>
+        
+        <div class="content">
+            <h1 class="title">ESTANTE VIRTUAL</h1>
+            <p class="subtitle">Conheça o nosso material de maneira rápida e dinâmica.</p>
+            <button class="cta-button" onclick="scrollToSection()">Nossos Livros 📖</button>
+        </div>
+    </section>
+
+    <!-- Seção dos Catálogos -->
+    <section class="catalog-section" id="catalogs">
+        
+        <!-- INFANTIL -->
+        <div class="category-section infantil">
+            <h2 class="category-title">Infantil</h2>
+            <div class="carousel-container">
+                <button class="nav-btn prev" onclick="moveCarousel('infantil', -1)">‹</button>
+                <div class="carousel" id="carousel-infantil">
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                </div>
+                <button class="nav-btn next" onclick="moveCarousel('infantil', 1)">›</button>
+            </div>
+            <div class="carousel-indicators" id="indicators-infantil"></div>
+        </div>
+
+        <!-- LITERATURA INFANTIL -->
+        <div class="category-section literatura">
+            <h2 class="category-title">Literatura Infantil</h2>
+            <div class="carousel-container">
+                <button class="nav-btn prev" onclick="moveCarousel('literatura', -1)">‹</button>
+                <div class="carousel" id="carousel-literatura">
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                </div>
+                <button class="nav-btn next" onclick="moveCarousel('literatura', 1)">›</button>
+            </div>
+            <div class="carousel-indicators" id="indicators-literatura"></div>
+        </div>
+
+        <!-- CANTO E ACALANTO -->
+        <div class="category-section canto">
+            <h2 class="category-title">Canto e Acalanto</h2>
+            <div class="carousel-container">
+                <button class="nav-btn prev" onclick="moveCarousel('canto', -1)">‹</button>
+                <div class="carousel" id="carousel-canto">
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                </div>
+                <button class="nav-btn next" onclick="moveCarousel('canto', 1)">›</button>
+            </div>
+            <div class="carousel-indicators" id="indicators-canto"></div>
+        </div>
+
+        <!-- EDUCAÇÃO ECOLÓGICA -->
+        <div class="category-section ecologica">
+            <h2 class="category-title">Educação Ecológica</h2>
+            <div class="carousel-container">
+                <button class="nav-btn prev" onclick="moveCarousel('ecologica', -1)">‹</button>
+                <div class="carousel" id="carousel-ecologica">
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                </div>
+                <button class="nav-btn next" onclick="moveCarousel('ecologica', 1)">›</button>
+            </div>
+            <div class="carousel-indicators" id="indicators-ecologica"></div>
+        </div>
+
+        <!-- AMIGOS DO TRÂNSITO -->
+        <div class="category-section transito">
+            <h2 class="category-title">Amigos do Trânsito</h2>
+            <div class="carousel-container">
+                <button class="nav-btn prev" onclick="moveCarousel('transito', -1)">‹</button>
+                <div class="carousel" id="carousel-transito">
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                </div>
+                <button class="nav-btn next" onclick="moveCarousel('transito', 1)">›</button>
+            </div>
+            <div class="carousel-indicators" id="indicators-transito"></div>
+        </div>
+
+        <!-- AFRO-INDÍGENA -->
+        <div class="category-section afro">
+            <h2 class="category-title">Afro-Indígena</h2>
+            <div class="carousel-container">
+                <button class="nav-btn prev" onclick="moveCarousel('afro', -1)">‹</button>
+                <div class="carousel" id="carousel-afro">
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                    <div class="book-card"></div>
+                </div>
+                <button class="nav-btn next" onclick="moveCarousel('afro', 1)">›</button>
+            </div>
+            <div class="carousel-indicators" id="indicators-afro"></div>
+        </div>
+
+    </section>
+
+     <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <!-- <div class="logo-icon"></div> -->
+                <!-- <div class="logo-text">Dinâmica</div> -->
+                 <img class="logofooter" src="./img/branco.png" alt="" srcset="">
+            </div>
+            
+            <!-- <p class="footer-description">
+                Transformando a educação através de materiais didáticos inovadores e de qualidade. 
+                Explore nosso catálogo completo de livros educacionais para todas as idades.
+            </p> -->
+            
+            <!-- <nav class="footer-links">
+                <a href="#" class="footer-link">Início</a>
+                <a href="#catalogs" class="footer-link">Estante Virtual</a>
+                <a href="#" class="footer-link">Coleções</a>
+                <a href="#" class="footer-link">Distribuidores</a>
+                <a href="#" class="footer-link">Contato</a>
+            </nav> -->
+            
+            <!-- <div class="social-icons">
+                <a href="#" class="social-icon">📧</a>
+                <a href="#" class="social-icon">📱</a>
+                <a href="#" class="social-icon">🌐</a>
+                <a href="#" class="social-icon">📍</a>
+            </div> -->
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Editora Dinâmica. Todos os direitos reservados.</p>
+                <!-- <p>Educação que transforma, conhecimento que inspira.</p> -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/estante.js"></script>
+</body>
+</html>

@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Editora Dinâmica - O Nosso Combustível é a Educação</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header" id="header">
+            <nav class="nav-container">
+                <a href="#" class="logo">
+                    <img src="img/branco.png" alt="Editora Dinâmica" class="logo-image logo-white" />
+                    <img src="img/vermelho.png" alt="Editora Dinâmica" class="logo-image logo-red" />
+                </a>
+
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#EstanteVirtual">Estante Virtual</a></li>
+                    <li><a href="#colecoes">Coleções</a></li>
+                    <li><a href="#distribuidores">Distribuidores</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </header>
+
+        <!-- HOME -->
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>O Nosso Combustível é a Educação</h1>
+                    <p>
+                        Há mais de 20 anos transformando vidas através da educação com livros didáticos de qualidade
+                        para toda a educação básica.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#colecoes" class="btn btn-primary">
+                            <i class="fas fa-book-open"></i>
+                            Conheça Nossas Coleções
+                        </a>
+                        <a href="#sobre" class="btn btn-secondary">
+                            <i class="fas fa-info-circle"></i>
+                            Sobre Nós
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="magic-book-scene">
+                        <!-- Livro realista na parte inferior -->
+                        <div class="realistic-book">
+                            <!-- Sombra do livro -->
+                            <div class="book-shadow"></div>
+
+                            <!-- Página esquerda -->
+                            <div class="book-left-page">
+                                <div class="page-texture"></div>
+                                <div class="page-content">
+                                    <div class="text-lines">
+                                        <div class="text-line short"></div>
+                                        <div class="text-line medium"></div>
+                                        <div class="text-line long"></div>
+                                        <div class="text-line medium"></div>
+                                        <div class="text-line short"></div>
+                                        <div class="text-line long"></div>
+                                        <div class="text-line medium"></div>
+                                        <div class="text-line short"></div>
+                                    </div>
+                                </div>
+                                <div class="page-edge-shadow"></div>
+                            </div>
+
+                            <!-- Página direita -->
+                            <div class="book-right-page">
+                                <div class="page-texture"></div>
+                                <div class="page-content">
+                                    <div class="text-lines">
+                                        <div class="text-line medium"></div>
+                                        <div class="text-line long"></div>
+                                        <div class="text-line short"></div>
+                                        <div class="text-line medium"></div>
+                                        <div class="text-line long"></div>
+                                        <div class="text-line short"></div>
+                                        <div class="text-line medium"></div>
+                                        <div class="text-line long"></div>
+                                    </div>
+                                </div>
+                                <div class="page-edge-shadow"></div>
+                            </div>
+
+                            <!-- Lombada/Miolo do livro -->
+                            <!-- <div class="book-spine">
+                                <div class="spine-texture"></div>
+                                <div class="spine-shadow"></div>
+                            </div> -->
+
+                            <!-- Páginas empilhadas -->
+                            <div class="book-pages-stack">
+                                <div class="page-layer layer-1"></div>
+                                <div class="page-layer layer-2"></div>
+                                <div class="page-layer layer-3"></div>
+                                <div class="page-layer layer-4"></div>
+                            </div>
+                        </div>
+
+                        <!-- Feixe de luz subindo do livro -->
+                        <div class="light-beam">
+                            <div class="beam-core"></div>
+                            <div class="beam-glow"></div>
+                            <div class="beam-particles">
+                                <div class="light-particle"></div>
+                                <div class="light-particle"></div>
+                                <div class="light-particle"></div>
+                                <div class="light-particle"></div>
+                                <div class="light-particle"></div>
+                                <div class="light-particle"></div>
+                                <div class="light-particle"></div>
+                                <div class="light-particle"></div>
+                                <div class="light-particle"></div>
+                                <div class="light-particle"></div>
+                            </div>
+                        </div>
+
+                        <!-- Letras e elementos flutuando na parte superior -->
+                        <div class="floating-content">
+                            <div class="floating-letters">
+                                <span class="magic-letter" style="--delay: 0s; --x: -60px; --y: -80px">E</span>
+                                <span class="magic-letter" style="--delay: 0.3s; --x: 40px; --y: -120px">D</span>
+                                <span class="magic-letter" style="--delay: 0.6s; --x: -20px; --y: -160px">U</span>
+                                <span class="magic-letter" style="--delay: 0.9s; --x: 80px; --y: -100px">C</span>
+                                <span class="magic-letter" style="--delay: 1.2s; --x: -80px; --y: -140px">A</span>
+                                <span class="magic-letter" style="--delay: 1.5s; --x: 20px; --y: -180px">Ç</span>
+                                <span class="magic-letter" style="--delay: 1.8s; --x: -40px; --y: -200px">Ã</span>
+                                <span class="magic-letter" style="--delay: 2.1s; --x: 60px; --y: -160px">O</span>
+                            </div>
+
+                            <div class="floating-numbers">
+                                <span class="magic-number" style="--delay: 0.4s; --x: -100px; --y: -90px">1</span>
+                                <span class="magic-number" style="--delay: 1s; --x: 100px; --y: -130px">2</span>
+                                <span class="magic-number" style="--delay: 1.6s; --x: -50px; --y: -170px">3</span>
+                                <span class="magic-number" style="--delay: 2.2s; --x: 70px; --y: -190px">4</span>
+                            </div>
+
+                            <div class="floating-symbols">
+                                <span class="magic-symbol" style="--delay: 0.7s; --x: -70px; --y: -110px">+</span>
+                                <span class="magic-symbol" style="--delay: 1.3s; --x: 50px; --y: -150px">×</span>
+                                <span class="magic-symbol" style="--delay: 1.9s; --x: -30px; --y: -190px">=</span>
+                                <span class="magic-symbol" style="--delay: 2.5s; --x: 90px; --y: -170px">÷</span>
+                            </div>
+
+                            <div class="floating-icons">
+                                <span class="magic-icon" style="--delay: 0.5s; --x: -90px; --y: -120px">📚</span>
+                                <span class="magic-icon" style="--delay: 1.1s; --x: 80px; --y: -140px">✨</span>
+                                <span class="magic-icon" style="--delay: 1.7s; --x: -60px; --y: -180px">💡</span>
+                                <span class="magic-icon" style="--delay: 2.3s; --x: 40px; --y: -200px">🌟</span>
+                            </div>
+                        </div>
+
+                        <!-- Efeito de brilho ambiente -->
+                        <div class="ambient-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- POR QUE ESCOLHER A EDITORA DINÂMICA -->
+        <section class="features fade-in">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Por que escolher a Editora Dinâmica?</h2>
+                    <p class="section-subtitle">
+                        Oferecemos soluções educacionais completas com mais de duas décadas de experiência no mercado
+                        editorial.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Educação Infantil</h3>
+                        <p>
+                            Materiais desenvolvidos especialmente para os primeiros passos na educação, priorizando o
+                            lúdico e a aprendizagem significativa.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Diversidade Cultural</h3>
+                        <p>
+                            Coleções que valorizam a cultura afro-indígena e promovem a diversidade cultural em sala de
+                            aula.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Preparação SAEB</h3>
+                        <p>Materiais alinhados com as avaliações nacionais para melhor preparação dos estudantes.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3>Língua Portuguesa</h3>
+                        <p>
+                            Gramática e produção textual com metodologia inovadora para o desenvolvimento da linguagem.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>Educação de Jovens e Adultos</h3>
+                        <p>
+                            Materiais específicos para EJA, respeitando a realidade e experiência dos estudantes
+                            adultos.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Formação de Professores</h3>
+                        <p>Capacitação e materiais especializados para o desenvolvimento profissional docente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ESTANTE VIRTUAL -->
+        <section class="virtual-library" id="EstanteVirtual">
+            <div class="container">
+                <div class="vl-content">
+                    <div class="vl-text">
+                        <h2>Estante Virtual</h2>
+                        <p>
+                            Conheça nossos materiais de maneira rápida e dinâmica através da nossa estante virtual
+                            interativa.
+                        </p>
+                        <a href="http://estantedinamica.epizy.com/" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Acessar Estante Virtual
+                        </a>
+                    </div>
+
+                    <img class="img_estante" src="./img/estante1.png" alt="" srcset="" />
+
+                    <div class="vl-visual">
+                        <div class="books-animation">
+                            <div class="book book-1"></div>
+                            <div class="book book-2"></div>
+                            <div class="book book-3"></div>
+                            <div class="book book-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOSSAS COLEÇÕES -->
+        <section class="collections" id="colecoes">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossas Coleções</h2>
+                    <p class="section-subtitle">
+                        Descubra nossa linha completa de materiais didáticos para todos os níveis educacionais.
+                    </p>
+                </div>
+
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="collection-card">
+                            <img src="./img/imagem1.png" alt="Literatura Infantil" class="collection-image" />
+                            <div class="collection-content">
+                                <div class="collection-icon">
+                                    <i class="fas fa-baby"></i>
+                                </div>
+                                <h3>Literatura Infantil</h3>
+                                <p>Histórias encantadoras que despertam o amor pela leitura desde cedo.</p>
+                                <a href="#" class="collection-link">
+                                    Explorar coleção <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="collection-card">
+                            <img src="./img/educacao_infantil.png" alt="Educação Infantil" class="collection-image" />
+                            <div class="collection-content">
+                                <div class="collection-icon">
+                                    <i class="fas fa-child"></i>
+                                </div>
+                                <h3>Educação Infantil</h3>
+                                <p>
+                                    Primeiros Passos - Material desenvolvido para as primeiras experiências
+                                    educacionais.
+                                </p>
+                                <a href="#" class="collection-link">
+                                    Explorar coleção <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="collection-card">
+                            <img src="./img/ensino_fundamental.png" alt="Ensino Fundamental" class="collection-image" />
+                            <div class="collection-content">
+                                <div class="collection-icon">
+                                    <i class="fas fa-school"></i>
+                                </div>
+                                <h3>Ensino Fundamental</h3>
+                                <p>Gramática Dinâmica, Produção Textual, SAEB e Cultura Afro-Indígena.</p>
+                                <a href="#" class="collection-link">
+                                    Explorar coleção <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="collection-card">
+                            <img src="./img/ensino_medio.png" alt="Ensino Médio" class="collection-image" />
+                            <div class="collection-content">
+                                <div class="collection-icon">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <h3>Ensino Médio</h3>
+                                <p>Preparação para ENEM e desenvolvimento completo das competências.</p>
+                                <a href="#" class="collection-link">
+                                    Explorar coleção <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="collection-card">
+                            <img src="./img/eja.png" alt="EJA" class="collection-image" />
+                            <div class="collection-content">
+                                <div class="collection-icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <h3>EJA</h3>
+                                <p>Educação de Jovens e Adultos com metodologia adaptada à realidade do público.</p>
+                                <a href="#" class="collection-link">
+                                    Explorar coleção <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="collection-card">
+                            <img src="./img/psicopedagogia.png" alt="Psicopedagogia" class="collection-image" />
+                            <div class="collection-content">
+                                <div class="collection-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h3>Psicopedagogia</h3>
+                                <p>Materiais especializados para formação e desenvolvimento profissional.</p>
+                                <a href="#" class="collection-link">
+                                    Explorar coleção <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-nav prev" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-nav next" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+
+                    <div class="carousel-indicators" id="indicators">
+                        <div class="indicator active" data-slide="0"></div>
+                        <div class="indicator" data-slide="1"></div>
+                        <div class="indicator" data-slide="2"></div>
+                        <div class="indicator" data-slide="3"></div>
+                        <div class="indicator" data-slide="4"></div>
+                        <div class="indicator" data-slide="5"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMAÇÃO DINÂMICA -->
+        <section class="formacoes-section">
+            <div class="decorative-shapes">
+                <div class="book-icon"></div>
+                <div class="book-icon"></div>
+                <div class="book-icon"></div>
+                <div class="book-icon"></div>
+                <div class="book-icon"></div>
+                <div class="book-icon"></div>
+            </div>
+
+            <div class="container2">
+                <div class="content">
+                    <h2>Formações Dinâmica</h2>
+                    <p>Conheça as nossas formações</p>
+                    <button class="cta-button">Saiba Mais</button>
+                </div>
+
+                <div class="images-container">
+                    <div class="scrolling-images">
+                        <div class="image-card">
+                            <!-- <div class="card-image"></div> -->
+                            <img class="imgformacao1" src="./img/dinamica1.jpeg" alt="" srcset="">
+                            <div class="card-actions">
+                                <span class="heart-icon">❤️</span>
+                                <span class="comment-icon">💬</span>
+                            </div>
+                        </div>
+                        
+                        <div class="image-card">
+                            <!-- <div class="card-image"></div> -->
+                            <img class="imgformacao1" src="./img/dinamica2.jpeg" alt="" srcset="">
+                            <div class="card-actions">
+                                <span class="heart-icon">❤️</span>
+                                <span class="comment-icon">💬</span>
+                            </div>
+                        </div>
+
+                        <div class="image-card">
+                            <!-- <div class="card-image"></div> -->
+                            <img class="imgformacao1" src="./img/dinamica3.jpeg" alt="" srcset="">
+                            <div class="card-actions">
+                                <span class="heart-icon">❤️</span>
+                                <span class="comment-icon">💬</span>
+                            </div>
+                        </div>
+
+                        <div class="image-card">
+                            <!-- <div class="card-image"></div> -->
+                            <img class="imgformacao1" src="./img/dinamica4.jpeg" alt="" srcset="">
+                            <div class="card-actions">
+                                <span class="heart-icon">❤️</span>
+                                <span class="comment-icon">💬</span>
+                            </div>
+                        </div>
+
+                        <div class="image-card">
+                            <!-- <div class="card-image"></div> -->
+                            <img class="imgformacao1" src="./img/dinamica5.jpeg" alt="" srcset="">
+                            <div class="card-actions">
+                                <span class="heart-icon">❤️</span>
+                                <span class="comment-icon">💬</span>
+                            </div>
+                        </div>
+
+                        <!-- <div class="image-card">
+                            <div class="card-image image-2">🎨 Design<br />& Criatividade</div>
+                            <div class="card-actions">
+                                <span class="heart-icon">❤️</span>
+                                <span class="comment-icon">💬</span>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="image-card">
+                            <div class="card-image image-3">📊 Marketing<br />Digital</div>
+                            <div class="card-actions">
+                                <span class="heart-icon">❤️</span>
+                                <span class="comment-icon">💬</span>
+                            </div>
+                        </div> -->
+
+                        <!-- Duplicamos as imagens para criar o loop infinito -->
+                        <!-- <div class="image-card">
+                            <div class="card-image">📚 Formação em<br />Desenvolvimento Web</div>
+                            <div class="card-actions">
+                                <span class="heart-icon">❤️</span>
+                                <span class="comment-icon">💬</span>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="image-card">
+                            <div class="card-image image-2">🎨 Design<br />& Criatividade</div>
+                            <div class="card-actions">
+                                <span class="heart-icon">❤️</span>
+                                <span class="comment-icon">💬</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE NÓS  -->
+        <section class="about fade-in" id="sobre">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Mais de 20 anos transformando a educação</h2>
+                        <p>
+                            A Editora Dinâmica é uma empresa focada no segmento de edições de livros didáticos. Em
+                            constante processo de evolução, trabalhamos para nos tornar uma das mais importantes
+                            editoras do Norte e Nordeste.
+                        </p>
+                        <p>
+                            Nossas edições são chanceladas pelos maiores e mais renomados autores de livros didáticos,
+                            priorizando uma visão interdisciplinar e transversal para atender com qualidade as demandas
+                            educacionais do cenário nacional.
+                        </p>
+
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="stat-number">20+</span>
+                                <span class="stat-label">Anos de experiência</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100+</span>
+                                <span class="stat-label">Títulos publicados</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">1M+</span>
+                                <span class="stat-label">Estudantes atendidos</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">10</span>
+                                <span class="stat-label">Distribuidores autorizados</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-visual">
+                        <div class="mission-vision">
+                            <div class="mv-item">
+                                <h4><i class="fas fa-bullseye"></i> Missão</h4>
+                                <p>
+                                    Fornecer com qualidade livros para auxiliar no desenvolvimento de crianças, jovens e
+                                    adultos na sua formação educacional.
+                                </p>
+                            </div>
+                            <div class="mv-item">
+                                <h4><i class="fas fa-eye"></i> Visão</h4>
+                                <p>
+                                    Ser a maior editora de livros didáticos do Norte Nordeste, levando sabedoria e
+                                    conhecimento a cada canto do Brasil.
+                                </p>
+                            </div>
+                            <div class="mv-item">
+                                <h4><i class="fas fa-heart"></i> Valores</h4>
+                                <p>
+                                    Inovação, comprometimento, qualidade, responsabilidade e ética em todos os nossos
+                                    processos e serviços.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DISTRIBUIDORES AUTORIZADOS -->
+        <section class="distributors fade-in" id="distribuidores">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Distribuidores Autorizados</h2>
+                    <p class="section-subtitle">
+                        Nossa rede de distribuidores garante que nossos materiais cheguem a você com qualidade e
+                        pontualidade.
+                    </p>
+                </div>
+
+                <div class="carousel-container">
+                    <div class="distributors-carousel" id="carousel">
+                        <div class="distributor-card">
+                            <div class="distributor-header">
+                                <h3>ALFA LIVROS</h3>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Eusébio/CE</span>
+                            </div>
+                            <div class="distributor-info">
+                                <div class="info-item">
+                                    <i class="fas fa-building"></i>
+                                    <span>Alfa Livros e Consultoria Ltda</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-id-card"></i>
+                                    <span>37.608.464/0001-95</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>(85) 98800-3243</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>alfasis.edu@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="distributor-card">
+                            <div class="distributor-header">
+                                <h3>AIR88</h3>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Fortaleza/CE</span>
+                            </div>
+                            <div class="distributor-info">
+                                <div class="info-item">
+                                    <i class="fas fa-building"></i>
+                                    <span>Air88 Comércio e Serviços de Livros</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-id-card"></i>
+                                    <span>29.503.043/0001-71</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>(85) 3241-1921</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>air88.comercioeservicos@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="distributor-card">
+                            <div class="distributor-header">
+                                <h3>GOMES E SILVA</h3>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Fortaleza/CE</span>
+                            </div>
+                            <div class="distributor-info">
+                                <div class="info-item">
+                                    <i class="fas fa-building"></i>
+                                    <span>GomeseSilva Assessoria e Comércio</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-id-card"></i>
+                                    <span>44.540.421/0001-80</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>(85) 3254-4372</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>gomesesilvalivros@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="distributor-card">
+                            <div class="distributor-header">
+                                <h3>DINÂMICA SP</h3>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Rio Claro/SP</span>
+                            </div>
+                            <div class="distributor-info">
+                                <div class="info-item">
+                                    <i class="fas fa-building"></i>
+                                    <span>Dinâmica Editora e Distribuidora</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-id-card"></i>
+                                    <span>45.657.683/0001-92</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>(19) 3524-0361</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>editoradinamicasp@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- EDUCA+ -->
+                        <div class="distributor-card">
+                            <div class="distributor-header">
+                                <h3>EDUCA+</h3>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Fortaleza/CE</span>
+                            </div>
+                            <div class="distributor-info">
+                                <div class="info-item">
+                                    <i class="fas fa-building"></i>
+                                    <span>Carlos Alberto Eliziario de Oliveira Filho</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-id-card"></i>
+                                    <span>51.911.128/0001-48</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>(85) 98635-3188</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>educamaislivros@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="carousel-indicators" id="indicators">
+                <div class="indicator active" data-slide="0"></div>
+                <div class="indicator" data-slide="1"></div>
+                <div class="indicator" data-slide="2"></div>
+                <div class="indicator" data-slide="3"></div>
+            </div> -->
+
+                <div class="explore-button">
+                    <a href="#" class="btn-explore">
+                        <span>Explorar Distribuidores</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENTRE EM CONTATO -->
+        <section class="contact fade-in" id="contato">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <p class="section-subtitle">
+                        Estamos prontos para atender você. Escolha o meio de comunicação mais conveniente.
+                    </p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Informações de Contato</h3>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Endereço</h4>
+                                <p>Fortaleza, Ceará<br />Brasil</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>(85) 3032-5726<br />Segunda a Sexta: 8h às 17h</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p>editoradinamica@hotmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>(85) 99618-6824</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3>Envie uma Mensagem</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Nome Completo</label>
+                                <input type="text" id="name" class="form-control" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" class="form-control" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Assunto</label>
+                                <input type="text" id="subject" class="form-control" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" class="form-control" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Enviar Mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <!-- Background educacional -->
+            <div class="educational-background">
+                <!-- Letras flutuantes -->
+                <div class="floating-letter" style="left: 5%; animation-delay: 0s">A</div>
+                <div class="floating-letter large" style="left: 15%; animation-delay: 3s">B</div>
+                <div class="floating-letter small" style="left: 25%; animation-delay: 1s">C</div>
+                <div class="floating-letter" style="left: 35%; animation-delay: 5s">D</div>
+                <div class="floating-letter large" style="left: 45%; animation-delay: 2s">E</div>
+                <div class="floating-letter small" style="left: 55%; animation-delay: 7s">F</div>
+                <div class="floating-letter" style="left: 65%; animation-delay: 4s">G</div>
+                <div class="floating-letter large" style="left: 75%; animation-delay: 6s">H</div>
+                <div class="floating-letter small" style="left: 85%; animation-delay: 1.5s">I</div>
+                <div class="floating-letter" style="left: 95%; animation-delay: 8s">J</div>
+
+                <div class="floating-letter small" style="left: 8%; animation-delay: 10s">K</div>
+                <div class="floating-letter" style="left: 18%; animation-delay: 12s">L</div>
+                <div class="floating-letter large" style="left: 28%; animation-delay: 9s">M</div>
+                <div class="floating-letter" style="left: 38%; animation-delay: 14s">N</div>
+                <div class="floating-letter small" style="left: 48%; animation-delay: 11s">O</div>
+                <div class="floating-letter" style="left: 58%; animation-delay: 16s">P</div>
+                <div class="floating-letter large" style="left: 68%; animation-delay: 13s">Q</div>
+                <div class="floating-letter small" style="left: 78%; animation-delay: 15s">R</div>
+                <div class="floating-letter" style="left: 88%; animation-delay: 17s">S</div>
+                <div class="floating-letter" style="left: 98%; animation-delay: 19s">T</div>
+
+                <!-- Números -->
+                <div class="floating-letter small" style="left: 12%; animation-delay: 21s">1</div>
+                <div class="floating-letter" style="left: 32%; animation-delay: 23s">2</div>
+                <div class="floating-letter large" style="left: 52%; animation-delay: 20s">3</div>
+                <div class="floating-letter" style="left: 72%; animation-delay: 25s">4</div>
+                <div class="floating-letter small" style="left: 92%; animation-delay: 22s">5</div>
+
+                <!-- Livros didáticos -->
+                <div class="floating-book" style="left: 10%; animation-delay: 2s">📚</div>
+                <div class="floating-book large" style="left: 30%; animation-delay: 8s">📖</div>
+                <div class="floating-book" style="left: 50%; animation-delay: 5s">📘</div>
+                <div class="floating-book large" style="left: 70%; animation-delay: 12s">📗</div>
+                <div class="floating-book" style="left: 90%; animation-delay: 15s">📙</div>
+
+                <div class="floating-book" style="left: 20%; animation-delay: 18s">📔</div>
+                <div class="floating-book large" style="left: 40%; animation-delay: 10s">📒</div>
+                <div class="floating-book" style="left: 60%; animation-delay: 25s">📕</div>
+                <div class="floating-book" style="left: 80%; animation-delay: 7s">📰</div>
+
+                <!-- Elementos educacionais -->
+                <div class="floating-pencil" style="left: 15%; animation-delay: 4s">✏️</div>
+                <div class="floating-pencil" style="left: 45%; animation-delay: 14s">🖊️</div>
+                <div class="floating-pencil" style="left: 75%; animation-delay: 9s">✂️</div>
+                <div class="floating-pencil" style="left: 85%; animation-delay: 20s">📐</div>
+            </div>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>Editora Dinâmica</h4>
+                        <p>
+                            Transformando a educação há mais de 20 anos com materiais didáticos de qualidade para toda a
+                            educação básica.
+                        </p>
+                        <div class="social-links">
+                            <a
+                                href="https://www.instagram.com/editoradinamica/"
+                                class="social-link"
+                                aria-label="Instagram"
+                                target="_blank"
+                            >
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a
+                                href="https://www.facebook.com/editora.dinamica"
+                                class="social-link"
+                                aria-label="Facebook"
+                                target="_blank"
+                            >
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a
+                                href="https://www.youtube.com/@TVDINAMICADINAMICA/videos"
+                                class="social-link"
+                                aria-label="YouTube"
+                                target="_blank"
+                            >
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a
+                                href="https://api.whatsapp.com/send?phone=5585996186824"
+                                class="social-link"
+                                aria-label="WhatsApp"
+                                target="_blank"
+                            >
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Navegação</h4>
+                        <ul>
+                            <li><a href="#inicio">Início</a></li>
+                            <li><a href="#sobre">Sobre Nós</a></li>
+                            <li><a href="#colecoes">Coleções</a></li>
+                            <li><a href="#distribuidores">Distribuidores</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Níveis Educacionais</h4>
+                        <ul>
+                            <li><a href="#">Educação Infantil</a></li>
+                            <li><a href="#">Ensino Fundamental</a></li>
+                            <li><a href="#">Ensino Médio</a></li>
+                            <li><a href="#">EJA</a></li>
+                            <li><a href="#">Psicopedagogia</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Recursos</h4>
+                        <ul>
+                            <li><a href="http://estantedinamica.epizy.com/">Estante Virtual</a></li>
+                            <li><a href="#">Formações</a></li>
+                            <li><a href="#">Tabela de Preços</a></li>
+                            <li><a href="#">Materiais Digitais</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Editora Dinâmica. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
