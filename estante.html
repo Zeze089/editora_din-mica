@@ -1,185 +1,793 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estante Virtual</title>
-    <link rel="stylesheet" href="./css/estante.css">
-   
-</head>
-<body>
-    <!-- Seção Hero -->
-    <section class="hero-section">
-        <div class="floating-particles">
-            <!-- <div class="book">📖</div>
-            <div class="book">📖</div>
-            <div class="book">📖</div>
-            <div class="book">📖</div>
-            <div class="book">📖</div>
-            <div class="book">📖</div>
-            <div class="book">📖</div>
-            <div class="book">📖</div> -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Estante Virtual</title>
+        <link rel="stylesheet" href="./css/estante.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
+    </head>
+    <body>
+        <!-- Seção Hero -->
+        <section class="hero-section">
+            <div class="floating-particles">
+                <div class="book"><img class="icones_flutuantes" src="./img/iconelivro1.png" alt="" srcset="" /></div>
+                <div class="book"><img class="icones_flutuantes" src="./img/iconelivro2.png" alt="" srcset="" /></div>
+                <div class="book"><img class="icones_flutuantes" src="./img/iconelivro3.png" alt="" srcset="" /></div>
+                <div class="book"><img class="icones_flutuantes" src="./img/iconelivro4.png" alt="" srcset="" /></div>
+                <div class="book"><img class="icones_flutuantes" src="./img/iconelivro5.png" alt="" srcset="" /></div>
+                <div class="book"><img class="icones_flutuantes" src="./img/iconelivro6.png" alt="" srcset="" /></div>
+                <div class="book"><img class="icones_flutuantes" src="./img/iconelivro7.png" alt="" srcset="" /></div>
+                <div class="book"><img class="icones_flutuantes" src="./img/iconelivro8.png" alt="" srcset="" /></div>
+                <!-- <div class="book">📚</div>
+            <div class="book">📓</div>
+            <div class="book">📰</div>
+            <div class="book">✏️</div>
+            <div class="book">📔</div>
+            <div class="book">🖊️</div>
+            <div class="book">📐</div> -->
+            </div>
 
-        </div>
-        
-        <div class="content">
-            <h1 class="title">ESTANTE VIRTUAL</h1>
-            <p class="subtitle">Conheça o nosso material de maneira rápida e dinâmica.</p>
-            <button class="cta-button" onclick="scrollToSection()">Nossos Livros 📖</button>
-        </div>
-    </section>
+            <div class="content">
+                <h1 class="title">ESTANTE VIRTUAL</h1>
+                <p class="subtitle">Conheça o nosso material de maneira rápida e dinâmica.</p>
+                <button class="cta-button" onclick="scrollToSection()">Nossos Livros 📖</button>
+            </div>
+        </section>
 
-    <!-- Seção dos Catálogos -->
-    <section class="catalog-section" id="catalogs">
-        
-        <!-- INFANTIL -->
-        <div class="category-section infantil">
-            <h2 class="category-title">Infantil</h2>
-            <div class="carousel-container">
-                <button class="nav-btn prev" onclick="moveCarousel('infantil', -1)">‹</button>
-                <div class="carousel" id="carousel-infantil">
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
+        <!-- Seção dos Catálogos -->
+        <section class="catalog-section" id="catalogs">
+            <!-- INFANTIL -->
+            <div class="category-section infantil">
+                <h2 class="category-title">
+                    Infantil <img class="icones_infantil" src="./img/iconelivro7.png" alt="" />
+                </h2>
+
+                <div class="carousel-container">
+                    <button class="nav-btn prev" onclick="moveCarousel('infantil', -1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-left"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+                            />
+                        </svg>
+                    </button>
+                    <div class="carousel" id="carousel-infantil">
+                        <!-- <div class="book-card"></div> -->
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/estante_infantil.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/estante_infantil.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/estante_infantil.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/estante_infantil.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/estante_infantil.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/estante_infantil.png" alt="" srcset=""
+                        /></a>
+                    </div>
+                    <button class="nav-btn next" onclick="moveCarousel('infantil', 1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-right"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                            />
+                        </svg>
+                    </button>
                 </div>
-                <button class="nav-btn next" onclick="moveCarousel('infantil', 1)">›</button>
-            </div>
-            <div class="carousel-indicators" id="indicators-infantil"></div>
-        </div>
 
-        <!-- LITERATURA INFANTIL -->
-        <div class="category-section literatura">
-            <h2 class="category-title">Literatura Infantil</h2>
-            <div class="carousel-container">
-                <button class="nav-btn prev" onclick="moveCarousel('literatura', -1)">‹</button>
-                <div class="carousel" id="carousel-literatura">
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
+                <div class="carousel-indicators" id="indicators-infantil"></div>
+            </div>
+
+            <!-- LITERATURA INFANTIL -->
+            <div class="category-section literatura">
+                <h2 class="category-title">
+                    Literatura Infantil <img class="icones_infantil" src="./img/iconelivro1.png" alt="" />
+                </h2>
+                <div class="carousel-container">
+                    <button class="nav-btn prev" onclick="moveCarousel('literatura', -1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-left"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+                            />
+                        </svg>
+                    </button>
+
+                    <div class="carousel" id="carousel-literatura">
+                        <!-- <div class="book-card"></div> -->
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/lite_infantil.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/lite_infantil.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/lite_infantil.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/lite_infantil.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/lite_infantil.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/lite_infantil.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/lite_infantil.png" alt="" srcset=""
+                        /></a>
+                    </div>
+
+                    <button class="nav-btn next" onclick="moveCarousel('literatura', 1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-right"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                            />
+                        </svg>
+                    </button>
                 </div>
-                <button class="nav-btn next" onclick="moveCarousel('literatura', 1)">›</button>
+                <div class="carousel-indicators" id="indicators-literatura"></div>
             </div>
-            <div class="carousel-indicators" id="indicators-literatura"></div>
-        </div>
 
-        <!-- CANTO E ACALANTO -->
-        <div class="category-section canto">
-            <h2 class="category-title">Canto e Acalanto</h2>
-            <div class="carousel-container">
-                <button class="nav-btn prev" onclick="moveCarousel('canto', -1)">‹</button>
-                <div class="carousel" id="carousel-canto">
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
+            <!-- CANTO E ACALANTO -->
+            <div class="category-section canto">
+                <h2 class="category-title">
+                    Canto e Acalanto <img class="icones_infantil" src="./img/icone_acalanto.png" alt="" />
+                </h2>
+                <div class="carousel-container">
+                    <button class="nav-btn prev" onclick="moveCarousel('canto', -1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-left"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+                            />
+                        </svg>
+                    </button>
+                    <div class="carousel" id="carousel-canto">
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/canto.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/canto.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/canto.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/canto.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/canto.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/canto.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/canto.png" alt="" srcset=""
+                        /></a>
+                    </div>
+                    <button class="nav-btn next" onclick="moveCarousel('canto', 1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-right"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                            />
+                        </svg>
+                    </button>
                 </div>
-                <button class="nav-btn next" onclick="moveCarousel('canto', 1)">›</button>
+                <div class="carousel-indicators" id="indicators-canto"></div>
             </div>
-            <div class="carousel-indicators" id="indicators-canto"></div>
-        </div>
 
-        <!-- EDUCAÇÃO ECOLÓGICA -->
-        <div class="category-section ecologica">
-            <h2 class="category-title">Educação Ecológica</h2>
-            <div class="carousel-container">
-                <button class="nav-btn prev" onclick="moveCarousel('ecologica', -1)">‹</button>
-                <div class="carousel" id="carousel-ecologica">
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
+            <!-- EDUCAÇÃO ECOLÓGICA -->
+            <div class="category-section ecologica">
+                <h2 class="category-title">
+                    Educação Ecológica <img class="icones_infantil" src="./img/icone_ecologico.png" alt="" />
+                </h2>
+                <div class="carousel-container">
+                    <button class="nav-btn prev" onclick="moveCarousel('ecologica', -1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-left"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+                            />
+                        </svg>
+                    </button>
+                    <div class="carousel" id="carousel-ecologica">
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/ecologico.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/ecologico.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/ecologico.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/ecologico.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/ecologico.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/ecologico.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/ecologico.png" alt="" srcset=""
+                        /></a>
+                    </div>
+                    <button class="nav-btn next" onclick="moveCarousel('ecologica', 1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-right"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                            />
+                        </svg>
+                    </button>
                 </div>
-                <button class="nav-btn next" onclick="moveCarousel('ecologica', 1)">›</button>
+                <div class="carousel-indicators" id="indicators-ecologica"></div>
             </div>
-            <div class="carousel-indicators" id="indicators-ecologica"></div>
-        </div>
 
-        <!-- AMIGOS DO TRÂNSITO -->
-        <div class="category-section transito">
-            <h2 class="category-title">Amigos do Trânsito</h2>
-            <div class="carousel-container">
-                <button class="nav-btn prev" onclick="moveCarousel('transito', -1)">‹</button>
-                <div class="carousel" id="carousel-transito">
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
+            <!-- AMIGOS DO TRÂNSITO -->
+            <div class="category-section transito">
+                <h2 class="category-title">
+                    Amigos do Trânsito <img class="icones_infantil" src="./img/icone_transito.png" alt="" />
+                </h2>
+                <div class="carousel-container">
+                    <button class="nav-btn prev" onclick="moveCarousel('transito', -1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-left"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+                            />
+                        </svg>
+                    </button>
+
+                    <div class="carousel" id="carousel-transito">
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/transito.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/transito.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/transito.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/transito.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/transito.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/transito.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/transito.png" alt="" srcset=""
+                        /></a>
+                    </div>
+
+                    <button class="nav-btn next" onclick="moveCarousel('transito', 1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-right"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                            />
+                        </svg>
+                    </button>
                 </div>
-                <button class="nav-btn next" onclick="moveCarousel('transito', 1)">›</button>
+                <div class="carousel-indicators" id="indicators-transito"></div>
             </div>
-            <div class="carousel-indicators" id="indicators-transito"></div>
-        </div>
 
-        <!-- AFRO-INDÍGENA -->
-        <div class="category-section afro">
-            <h2 class="category-title">Afro-Indígena</h2>
-            <div class="carousel-container">
-                <button class="nav-btn prev" onclick="moveCarousel('afro', -1)">‹</button>
-                <div class="carousel" id="carousel-afro">
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
-                    <div class="book-card"></div>
+            <!-- AFRO-INDÍGENA -->
+            <div class="category-section afro">
+                <h2 class="category-title">
+                    Afro-Indígena <img class="icones_infantil" src="./img/icone_indigena.png" alt="" />
+                </h2>
+                <div class="carousel-container">
+                    <button class="nav-btn prev" onclick="moveCarousel('afro', -1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-left"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+                            />
+                        </svg>
+                    </button>
+                    <div class="carousel" id="carousel-afro">
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/indigena.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/indigena.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/indigena.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/indigena.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/indigena.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/indigena.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/indigena.png" alt="" srcset=""
+                        /></a>
+                    </div>
+                    <button class="nav-btn next" onclick="moveCarousel('afro', 1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-right"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                            />
+                        </svg>
+                    </button>
                 </div>
-                <button class="nav-btn next" onclick="moveCarousel('afro', 1)">›</button>
+                <div class="carousel-indicators" id="indicators-afro"></div>
             </div>
-            <div class="carousel-indicators" id="indicators-afro"></div>
-        </div>
 
-    </section>
-
-     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <!-- <div class="logo-icon"></div> -->
-                <!-- <div class="logo-text">Dinâmica</div> -->
-                 <img class="logofooter" src="./img/branco.png" alt="" srcset="">
+            <!-- PRODUÇÃO TEXTUAL -->
+            <div class="category-section prod">
+                <h2 class="category-title">
+                    Produção Textual <img class="icones_infantil" src="./img/icone_textual.png" alt="" />
+                </h2>
+                <div class="carousel-container">
+                    <button class="nav-btn prev" onclick="moveCarousel('prod', -1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-left"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+                            />
+                        </svg>
+                    </button>
+                    <div class="carousel" id="carousel-prod">
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/textual.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/textual.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/textual.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/textual.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/textual.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/textual.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/textual.png" alt="" srcset=""
+                        /></a>
+                    </div>
+                    <button class="nav-btn next" onclick="moveCarousel('prod', 1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-right"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                            />
+                        </svg>
+                    </button>
+                </div>
+                <div class="carousel-indicators" id="indicators-prod"></div>
             </div>
-            
-            <!-- <p class="footer-description">
+
+            <!-- GRAMÁTICA -->
+            <div class="category-section gram">
+                <h2 class="category-title">
+                    Gramática <img class="icones_infantil" src="./img/icone_gramatica.png" alt="" />
+                </h2>
+                <div class="carousel-container">
+                    <button class="nav-btn prev" onclick="moveCarousel('gram', -1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-left"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+                            />
+                        </svg>
+                    </button>
+                    <div class="carousel" id="carousel-gram">
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/gramatica.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/gramatica.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/gramatica.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/gramatica.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/gramatica.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/gramatica.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/gramatica.png" alt="" srcset=""
+                        /></a>
+                    </div>
+                    <button class="nav-btn next" onclick="moveCarousel('gram', 1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-right"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                            />
+                        </svg>
+                    </button>
+                </div>
+                <div class="carousel-indicators" id="indicators-gram"></div>
+            </div>
+
+            <!-- SAEB -->
+            <div class="category-section saeb">
+                <h2 class="category-title">SAEB <img class="icones_infantil" src="./img/icone_saeb.png" alt="" /></h2>
+                <div class="carousel-container">
+                    <button class="nav-btn prev" onclick="moveCarousel('saeb', -1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-left"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+                            />
+                        </svg>
+                    </button>
+                    <div class="carousel" id="carousel-saeb">
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/saeb.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/saeb.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/saeb.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/saeb.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/saeb.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/saeb.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/saeb.png" alt="" srcset=""
+                        /></a>
+                    </div>
+                    <button class="nav-btn next" onclick="moveCarousel('saeb', 1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-right"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                            />
+                        </svg>
+                    </button>
+                </div>
+                <div class="carousel-indicators" id="indicators-saeb"></div>
+            </div>
+
+            <!-- EDUCAÇÃO DE JOVENS E ADULTOS -->
+            <div class="category-section jea">
+                <h2 class="category-title">
+                    EDUCAÇÃO DE JOVENS E ADULTOS <img class="icones_infantil" src="./img/icone_jea.png" alt="" />
+                </h2>
+                <div class="carousel-container">
+                    <button class="nav-btn prev" onclick="moveCarousel('jea', -1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-left"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+                            />
+                        </svg>
+                    </button>
+                    <div class="carousel" id="carousel-jea">
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/jea.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/jea.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/jea.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/jea.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/jea.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/jea.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/jea.png" alt="" srcset=""
+                        /></a>
+                    </div>
+                    <button class="nav-btn next" onclick="moveCarousel('jea', 1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-right"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                            />
+                        </svg>
+                    </button>
+                </div>
+                <div class="carousel-indicators" id="indicators-jea"></div>
+            </div>
+
+            <!-- PSICOPEDAGOGIA -->
+            <div class="category-section Psi">
+                <h2 class="category-title">
+                    PSICOPEDAGOGIA <img class="icones_infantil" src="./img/icone_Psi.png" alt="" />
+                </h2>
+                <div class="carousel-container">
+                    <button class="nav-btn prev" onclick="moveCarousel('Psi', -1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-left"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+                            />
+                        </svg>
+                    </button>
+                    <div class="carousel" id="carousel-Psi">
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/Psi.png" alt="" srcset=""
+                        /></a>
+                        <a class="img_carrocel" href="https://estantedinamica.epizy.com/CAPA/PRIM2R.png"
+                            ><img src="./img/Psi2.png" alt="" srcset=""
+                        /></a>
+                    </div>
+                    <button class="nav-btn next" onclick="moveCarousel('Psi', 1)">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-arrow-right"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                            />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- <div class="carousel-indicators" id="indicators-Psi"></div> -->
+                 
+            </div>
+        </section>
+
+        <!-- ESTANTE VIRTUAL -->
+        <section class="virtual-library" id="EstanteVirtual">
+            <div class="container">
+                <div class="vl-content">
+                    <!-- <div class="vl-text">
+                        <h2>Estante Virtual</h2>
+                        <p>
+                            Conheça nossos materiais de maneira rápida e dinâmica através da nossa estante virtual
+                            interativa.
+                        </p>
+                        <a href="./estante.html" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            Acessar Estante Virtual
+                        </a>
+                    </div> -->
+
+                    <img class="img_estante" src="./img/estante1.png" alt="" srcset="" />
+
+                    <div class="vl-visual">
+                        <div class="books-animation">
+                            <div class="book book-1"></div>
+                            <div class="book book-2"></div>
+                            <div class="book book-3"></div>
+                            <div class="book book-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <!-- <div class="logo-icon"></div> -->
+                    <!-- <div class="logo-text">Dinâmica</div> -->
+                    <img class="logofooter" src="./img/branco.png" alt="" srcset="" />
+                </div>
+
+                <!-- <p class="footer-description">
                 Transformando a educação através de materiais didáticos inovadores e de qualidade. 
                 Explore nosso catálogo completo de livros educacionais para todas as idades.
             </p> -->
-            
-            <!-- <nav class="footer-links">
+
+                <!-- <nav class="footer-links">
                 <a href="#" class="footer-link">Início</a>
                 <a href="#catalogs" class="footer-link">Estante Virtual</a>
                 <a href="#" class="footer-link">Coleções</a>
                 <a href="#" class="footer-link">Distribuidores</a>
                 <a href="#" class="footer-link">Contato</a>
             </nav> -->
-            
-            <!-- <div class="social-icons">
+
+                <!-- <div class="social-icons">
                 <a href="#" class="social-icon">📧</a>
                 <a href="#" class="social-icon">📱</a>
                 <a href="#" class="social-icon">🌐</a>
                 <a href="#" class="social-icon">📍</a>
             </div> -->
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Editora Dinâmica. Todos os direitos reservados.</p>
-                <!-- <p>Educação que transforma, conhecimento que inspira.</p> -->
-            </div>
-        </div>
-    </footer>
 
-    <script src="./js/estante.js"></script>
-</body>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Editora Dinâmica. Todos os direitos reservados.</p>
+                    <!-- <p>Educação que transforma, conhecimento que inspira.</p> -->
+                </div>
+            </div>
+        </footer>
+
+        <script src="./js/estante.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"></script>
+    </body>
 </html>

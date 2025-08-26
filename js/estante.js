@@ -3,7 +3,7 @@
 
         // Inicializar carrosséis
         function initCarousels() {
-            const categories = ['infantil', 'literatura', 'canto', 'ecologica', 'transito', 'afro'];
+            const categories = ['infantil', 'literatura', 'canto', 'ecologica', 'transito', 'afro', 'prod', 'gram', 'saeb', 'jea', 'Psi'];
             
             categories.forEach(category => {
                 const carousel = document.getElementById(`carousel-${category}`);
@@ -147,3 +147,9 @@
             }
         `;
         document.head.appendChild(style);
+
+
+
+
+
+     
