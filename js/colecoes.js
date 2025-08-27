@@ -83,7 +83,6 @@ class SliderManager {
         
         this.wrapper.style.transform = `translateX(-${index * 100}%)`;
         
-        // Atualizar dots específicos deste slider
         const sliderContainer = document.querySelector(`#slider${this.sliderId}`);
         if (sliderContainer) {
             const dots = sliderContainer.querySelectorAll('.dot');
@@ -155,67 +154,73 @@ class SliderManager {
     }
 }
 
-// Configuração dos sliders
-const slidersData = {
+// Configuração padrão para botões (caso não seja especificada)
+const defaultButtons = [
+    { text: "Ver Mais", link: "#mais", class: "slider-button" },
+    { text: "Saiba Mais", link: "#saiba", class: "slider-button" },
+    { text: "Conhecer", link: "#conhecer", class: "slider-button" },
+    { text: "Contato", link: "#contato", class: "slider-button" }
+];
+
+// Configuração específica para cada slider
+const slidersConfig = {
     1: {
-        totalSlides: 4,
-        autoSlide: true, 
-        autoSlideDelay: 5000,
         buttons: [
-            {
-                text: "Literatura Infantil",
-                link: "#design",
-                class: "slider-button",
-            },
-            {
-                text: "Educação Ecológica",
-                link: "#consultoria",
-                class: "slider-button",
-            },
-            {
-                text: "Canto e acalanto",
-                link: "#especialista",
-                class: "slider-button",
-            },
-            {
-                text: "AMIGOS DO TRÂNSITO",
-                link: "#transito",
-                class: "slider-button",
-            }
-        ]
+            { text: "Literatura Infantil", link: "#design", class: "slider-button" },
+            { text: "Educação Ecológica", link: "#consultoria", class: "slider-button" },
+            { text: "Canto e acalanto", link: "#especialista", class: "slider-button" },
+            { text: "AMIGOS DO TRÂNSITO", link: "#transito", class: "slider-button" }
+        ],
+        autoSlide: true,
+        autoSlideDelay: 5000
     },
     2: {
-        totalSlides: 4,
-        autoSlide: false,
         buttons: [
-            {
-                text: "Ver Educação Infantil",
-                link: "#educacao",
-                class: "slider-button"
-            },
-            {
-                text: "Solicitar Catálogo",
-                link: "#catalogo", 
-                class: "slider-button"
-            },
-            {
-                text: "Conhecer Autores",
-                link: "#autores",
-                class: "slider-button"
-            },
-            {
-                text: "Falar Conosco",
-                link: "#contato",
-                class: "slider-button"
-            }
-        ]
+            { text: "Ver Educação Infantil", link: "#educacao", class: "slider-button" },
+            { text: "Solicitar Catálogo", link: "#catalogo", class: "slider-button" },
+            { text: "Conhecer Autores", link: "#autores", class: "slider-button" },
+            { text: "Falar Conosco", link: "#contato", class: "slider-button" }
+        ],
+        autoSlide: true
+    },
+    3: {
+        buttons: [
+            { text: "GRAMÁTICA DINÂMICA", link: "#gramatica", class: "slider-button" },
+            { text: "PRODUÇÃO TEXTUAL", link: "#producao", class: "slider-button" },
+            { text: "(SAEB)", link: "#autores", class: "slider-button" },
+            { text: "AFRO-BRASILEIRA", link: "#contato", class: "slider-button" }
+        ],
+        autoSlide: true,
+        autoSlideDelay: 6000
+    },
+    4: {
+        buttons: [
+            { text: "REDAÇÃO NO ENEM", link: "#gramatica", class: "slider-button" },
+            { text: "GRAMÁTICA APLICADA", link: "#producao", class: "slider-button" },
+            { text: "EDUCAÇÃO DE JOVENS E ADULTOS", link: "#autores", class: "slider-button" },
+        ],
+        autoSlide: false
+    },
+    5: {
+        buttons: [
+            { text: "EDUCAÇÃO DE JOVENS E ADULTOS", link: "#gramatica", class: "slider-button" },
+            { text: "EDUCAÇÃO DE JOVENS E ADULTOS", link: "#producao", class: "slider-button" },
+        ],
+        autoSlide: false
+    },
+    6: {
+          buttons: [
+            { text: "PRÁTICAS PEDAGÓGICAS NA EDUCAÇÃO INCLUSIVA", link: "#gramatica", class: "slider-button" },
+            { text: "AFETIVIDADE E APRENDIZAGEM", link: "#producao", class: "slider-button" },
+        ],
+        autoSlide: false
     }
 };
 
 // Instanciar sliders
 let sliders = {};
 
-// Funções globais para compatibilidade com o HTML
+// Funções globais
 function nextSlide(sliderId = 1) {
     if (sliders[sliderId]) {
         sliders[sliderId].nextSlide();
@@ -234,17 +239,34 @@ function currentSlide(index, sliderId = 1) {
     }
 }
 
-// Inicializar sliders quando o DOM estiver carregado
+// Auto-detectar e inicializar todos os sliders
 document.addEventListener("DOMContentLoaded", function() {
-    // Inicializar slider 1
-    if (document.getElementById('sliderWrapper1')) {
-        const config1 = slidersData[1];
-        sliders[1] = new SliderManager(1, config1.totalSlides, config1.buttons, config1.autoSlide, config1.autoSlideDelay);
-    }
+    // Buscar todos os containers de slider que existem na página
+    const sliderContainers = document.querySelectorAll('[id^="slider"]');
     
-    // Inicializar slider 2
-    if (document.getElementById('sliderWrapper2')) {
-        const config2 = slidersData[2];
-        sliders[2] = new SliderManager(2, config2.totalSlides, config2.buttons, config2.autoSlide);
-    }
+    sliderContainers.forEach(container => {
+        const sliderId = container.id.replace('slider', '');
+        const sliderWrapper = document.getElementById(`sliderWrapper${sliderId}`);
+        
+        if (sliderWrapper) {
+            // Contar quantos slides existem
+            const slides = sliderWrapper.querySelectorAll('.slide');
+            const totalSlides = slides.length;
+            
+            // Usar configuração específica ou padrão
+            const config = slidersConfig[sliderId] || {
+                buttons: defaultButtons.slice(0, totalSlides),
+                autoSlide: false
+            };
+            
+            // Criar o slider
+            sliders[sliderId] = new SliderManager(
+                sliderId,
+                totalSlides,
+                config.buttons,
+                config.autoSlide,
+                config.autoSlideDelay
+            );
+        }
+    });
 });
