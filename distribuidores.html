@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuidores Autorizados</title>
+    <link rel="stylesheet" href="./css/distribuidores.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img class="logo_colecoes" src="./img/branco.png" alt="" srcset="" />
+                <!-- <div class="logo-icon"></div>
+                <span>Dinâmica</span> -->
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="estante.html">ESTANTE VITUAL</a></li>
+                        <li><a href="colecoes.html">COLEÇÕES</a></li>
+                        <li><a href="formacao.html">FORMAÇÕES</a></li>
+                        <li><a href="distribuidores.html">DISTRIBUIDORES</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                </ul>
+                <div class="mobile-menu" id="mobileMenu">⋮</div>
+            </nav>
+        </div>
+        <div class="menu-overlay" id="menuOverlay"></div>
+    </header>
+
+    <main>
+        <section class="hero-title-section">
+            <div class="hero-title-container">
+                <div class="title-content">
+                    <h1 class="main-title">Distribuidores<br>Autorizados</h1>
+                    <!-- <a href="#distribuidores" class="title-button">Coleções</a> -->
+                </div>
+                
+                <div class="title-bookshelf">
+                    <div class="open-book">
+                        <div class="book-spine"></div>
+                        <div class="book-pages">
+                            <div class="page-left">
+                                <div class="page-content">
+                                    <div class="page-lines">
+                                        <div class="page-line"></div>
+                                        <div class="page-line"></div>
+                                        <div class="page-line"></div>
+                                        <div class="page-line"></div>
+                                        <div class="page-line"></div>
+                                        <div class="page-line"></div>
+                                        <div class="page-line"></div>
+                                        <div class="page-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-right">
+                                <div class="page-content">
+                                    <div class="page-lines">
+                                        <div class="page-line"></div>
+                                        <div class="page-line"></div>
+                                        <div class="page-line"></div>
+                                        <div class="page-line"></div>
+                                        <div class="page-line"></div>
+                                        <div class="page-line"></div>
+                                        <div class="page-line"></div>
+                                        <div class="page-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-particles">
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="distribuidores-section" id="distribuidores">
+            <div class="distribuidores-container">
+                <h1 class="section-title">Distribuidores Autorizados</h1>
+                
+                <div class="distribuidores-grid">
+                    <!-- ALFA LIVROS -->
+                    <div class="distribuidor-card">
+                        <div class="distribuidor-header">ALFA LIVROS</div>
+                        <div class="distribuidor-content">
+                            <div class="distribuidor-details active">
+                                <div class="detail-row">
+                                    <span class="detail-label">Razão Social:</span>
+                                    <span class="detail-value">Alfa Livros e Consultoria Ltda</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">CNPJ:</span>
+                                    <span class="detail-value">37.608.464/0001-95</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Endereço:</span>
+                                    <span class="detail-value">Avenida Pacífico 500, sala 309 Torre Mall Business, Cidade Alpha - Eusébio/CE - CEP:61765-850</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Contato:</span>
+                                    <span class="detail-value">(85) 98800-3243</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">E-mail:</span>
+                                    <span class="detail-value">alfasis.edu@gmail.com</span>
+                                </div>
+                            </div>
+                            <button class="visualizar-btn active" onclick="toggleDetails(this)">Ocultar Informações</button>
+                        </div>
+                    </div>
+
+                    <!-- AIR88 -->
+                    <div class="distribuidor-card">
+                        <div class="distribuidor-header">AIR88</div>
+                        <div class="distribuidor-content">
+                            <div class="distribuidor-details">
+                                <div class="detail-row">
+                                    <span class="detail-label">Razão Social:</span>
+                                    <span class="detail-value">AIR88 Distribuidora Ltda</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">CNPJ:</span>
+                                    <span class="detail-value">12.345.678/0001-90</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Endereço:</span>
+                                    <span class="detail-value">Rua das Flores, 123 - Centro - São Paulo/SP</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Contato:</span>
+                                    <span class="detail-value">(11) 99999-0000</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">E-mail:</span>
+                                    <span class="detail-value">contato@air88.com.br</span>
+                                </div>
+                            </div>
+                            <button class="visualizar-btn" onclick="toggleDetails(this)">Visualizar Informações</button>
+                        </div>
+                    </div>
+
+                    <!-- EDUCA+ -->
+                    <div class="distribuidor-card">
+                        <div class="distribuidor-header">EDUCA+</div>
+                        <div class="distribuidor-content">
+                            <div class="distribuidor-details">
+                                <div class="detail-row">
+                                    <span class="detail-label">Razão Social:</span>
+                                    <span class="detail-value">Educa+ Educação e Cultura Ltda</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">CNPJ:</span>
+                                    <span class="detail-value">98.765.432/0001-10</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Endereço:</span>
+                                    <span class="detail-value">Avenida Educação, 456 - Vila Nova - Rio de Janeiro/RJ</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Contato:</span>
+                                    <span class="detail-value">(21) 88888-7777</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">E-mail:</span>
+                                    <span class="detail-value">info@educamais.com.br</span>
+                                </div>
+                            </div>
+                            <button class="visualizar-btn" onclick="toggleDetails(this)">Visualizar Informações</button>
+                        </div>
+                    </div>
+
+                    <!-- GOMESeSILVA -->
+                    <div class="distribuidor-card">
+                        <div class="distribuidor-header">GOMESeSILVA</div>
+                        <div class="distribuidor-content">
+                            <div class="distribuidor-details">
+                                <div class="detail-row">
+                                    <span class="detail-label">Razão Social:</span>
+                                    <span class="detail-value">Gomes e Silva Distribuidora Ltda</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">CNPJ:</span>
+                                    <span class="detail-value">11.222.333/0001-44</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Endereço:</span>
+                                    <span class="detail-value">Rua Comercial, 789 - Jardins - Belo Horizonte/MG</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Contato:</span>
+                                    <span class="detail-value">(31) 77777-6666</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">E-mail:</span>
+                                    <span class="detail-value">vendas@gomesesilva.com.br</span>
+                                </div>
+                            </div>
+                            <button class="visualizar-btn" onclick="toggleDetails(this)">Visualizar Informações</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="distribuidores-grid">
+                    <!-- DINÂMICA SP -->
+                    <div class="distribuidor-card">
+                        <div class="distribuidor-header">DINÂMICA SP</div>
+                        <div class="distribuidor-content">
+                            <div class="distribuidor-details">
+                                <div class="detail-row">
+                                    <span class="detail-label">Razão Social:</span>
+                                    <span class="detail-value">Dinâmica São Paulo Editora Ltda</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">CNPJ:</span>
+                                    <span class="detail-value">55.666.777/0001-88</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Endereço:</span>
+                                    <span class="detail-value">Rua Augusta, 1200 - Consolação - São Paulo/SP</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Contato:</span>
+                                    <span class="detail-value">(11) 66666-5555</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">E-mail:</span>
+                                    <span class="detail-value">sp@dinamica.com.br</span>
+                                </div>
+                            </div>
+                            <button class="visualizar-btn" onclick="toggleDetails(this)">Visualizar Informações</button>
+                        </div>
+                    </div>
+
+                    <!-- CRIATIVE -->
+                    <div class="distribuidor-card">
+                        <div class="distribuidor-header">CRIATIVE</div>
+                        <div class="distribuidor-content">
+                            <div class="distribuidor-details">
+                                <div class="detail-row">
+                                    <span class="detail-label">Razão Social:</span>
+                                    <span class="detail-value">Criative Soluções Educacionais Ltda</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">CNPJ:</span>
+                                    <span class="detail-value">99.888.777/0001-66</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Endereço:</span>
+                                    <span class="detail-value">Avenida Criativa, 321 - Boa Vista - Recife/PE</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Contato:</span>
+                                    <span class="detail-value">(81) 55555-4444</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">E-mail:</span>
+                                    <span class="detail-value">contato@criative.com.br</span>
+                                </div>
+                            </div>
+                            <button class="visualizar-btn" onclick="toggleDetails(this)">Visualizar Informações</button>
+                        </div>
+                    </div>
+
+                    <!-- JR GOMES -->
+                    <div class="distribuidor-card">
+                        <div class="distribuidor-header">JR GOMES</div>
+                        <div class="distribuidor-content">
+                            <div class="distribuidor-details">
+                                <div class="detail-row">
+                                    <span class="detail-label">Razão Social:</span>
+                                    <span class="detail-value">JR Gomes Distribuidora ME</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">CNPJ:</span>
+                                    <span class="detail-value">33.444.555/0001-22</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Endereço:</span>
+                                    <span class="detail-value">Rua do Comércio, 654 - Centro - Salvador/BA</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Contato:</span>
+                                    <span class="detail-value">(71) 44444-3333</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">E-mail:</span>
+                                    <span class="detail-value">jr@jrgomes.com.br</span>
+                                </div>
+                            </div>
+                            <button class="visualizar-btn" onclick="toggleDetails(this)">Visualizar Informações</button>
+                        </div>
+                    </div>
+
+                    <!-- AL DISTRIBUIDORA -->
+                    <div class="distribuidor-card">
+                        <div class="distribuidor-header">AL DISTRIBUIDORA</div>
+                        <div class="distribuidor-content">
+                            <div class="distribuidor-details">
+                                <div class="detail-row">
+                                    <span class="detail-label">Razão Social:</span>
+                                    <span class="detail-value">AL Distribuidora de Livros Ltda</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">CNPJ:</span>
+                                    <span class="detail-value">77.888.999/0001-00</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Endereço:</span>
+                                    <span class="detail-value">Avenida Principal, 987 - Farol - Maceió/AL</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Contato:</span>
+                                    <span class="detail-value">(82) 33333-2222</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">E-mail:</span>
+                                    <span class="detail-value">vendas@aldistribuidora.com.br</span>
+                                </div>
+                            </div>
+                            <button class="visualizar-btn" onclick="toggleDetails(this)">Visualizar Informações</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="distribuidores-grid">
+                    <!-- IMPACT AN94 -->
+                    <div class="distribuidor-card">
+                        <div class="distribuidor-header">IMPACT AN94</div>
+                        <div class="distribuidor-content">
+                            <div class="distribuidor-details">
+                                <div class="detail-row">
+                                    <span class="detail-label">Razão Social:</span>
+                                    <span class="detail-value">Impact AN94 Soluções Ltda</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">CNPJ:</span>
+                                    <span class="detail-value">22.333.444/0001-55</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Endereço:</span>
+                                    <span class="detail-value">Rua Inovação, 147 - Tecnópolis - Fortaleza/CE</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Contato:</span>
+                                    <span class="detail-value">(85) 22222-1111</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">E-mail:</span>
+                                    <span class="detail-value">impact@an94.com.br</span>
+                                </div>
+                            </div>
+                            <button class="visualizar-btn" onclick="toggleDetails(this)">Visualizar Informações</button>
+                        </div>
+                    </div>
+
+                    <!-- BRASIL LIVROS -->
+                    <div class="distribuidor-card">
+                        <div class="distribuidor-header">BRASIL LIVROS</div>
+                        <div class="distribuidor-content">
+                            <div class="distribuidor-details">
+                                <div class="detail-row">
+                                    <span class="detail-label">Razão Social:</span>
+                                    <span class="detail-value">Brasil Livros e Cultura Ltda</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">CNPJ:</span>
+                                    <span class="detail-value">66.777.888/0001-99</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Endereço:</span>
+                                    <span class="detail-value">Avenida Brasil, 2000 - Copacabana - Rio de Janeiro/RJ</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Contato:</span>
+                                    <span class="detail-value">(21) 11111-0000</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">E-mail:</span>
+                                    <span class="detail-value">contato@brasillivros.com.br</span>
+                                </div>
+                            </div>
+                            <button class="visualizar-btn" onclick="toggleDetails(this)">Visualizar Informações</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <!-- <div class="logo-icon"></div> -->
+                    <!-- <div class="logo-text">Dinâmica</div> -->
+                    <img class="logofooter" src="./img/branco.png" alt="" srcset="" />
+                </div>
+
+                <!-- <p class="footer-description">
+                Transformando a educação através de materiais didáticos inovadores e de qualidade. 
+                Explore nosso catálogo completo de livros educacionais para todas as idades.
+            </p> -->
+
+                <!-- <nav class="footer-links">
+                <a href="#" class="footer-link">Início</a>
+                <a href="#catalogs" class="footer-link">Estante Virtual</a>
+                <a href="#" class="footer-link">Coleções</a>
+                <a href="#" class="footer-link">Distribuidores</a>
+                <a href="#" class="footer-link">Contato</a>
+            </nav> -->
+
+                <!-- <div class="social-icons">
+                <a href="#" class="social-icon">📧</a>
+                <a href="#" class="social-icon">📱</a>
+                <a href="#" class="social-icon">🌐</a>
+                <a href="#" class="social-icon">📍</a>
+            </div> -->
+
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Editora Dinâmica. Todos os direitos reservados.</p>
+                    <!-- <p>Educação que transforma, conhecimento que inspira.</p> -->
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <script src="./js/distribuidores.js"></script>
+</body>
+</html>
