@@ -9,6 +9,7 @@ mobileMenuBtn.addEventListener("click", () => {
     icon.classList.toggle("fa-times");
 });
 
+
 // Header scroll effect
 const header = document.getElementById("header");
 window.addEventListener("scroll", () => {
@@ -18,6 +19,8 @@ window.addEventListener("scroll", () => {
         header.classList.remove("scrolled");
     }
 });
+
+
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -37,6 +40,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         }
     });
 });
+
+
 
 // Fade in animation on scroll
 const observerOptions = {

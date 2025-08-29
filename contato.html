@@ -1,178 +1,392 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Dinâmica</title>
-    <link rel="stylesheet" href="./css/contato.css">
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <!-- <div class="logo-icon"></div>
-                <span>Dinâmica</span> -->
-                <img class="logo_colecoes" src="./img/branco.png" alt="" srcset="" />
-            </div>
-            <nav>
-                <ul class="nav-menu">
-                     <li><a href="index.html">Início</a></li>
-                        <li><a href="estante.html">ESTANTE VITUAL</a></li>
-                        <li><a href="colecoes.html">COLEÇÕES</a></li>
-                        <li><a href="formacao.html">FORMAÇÕES</a></li>
-                        <li><a href="distribuidores.html">DISTRIBUIDORES</a></li>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Editora Dinâmica - O Nosso Combustível é a Educação</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header" id="header">
+            <nav class="nav-container">
+                <a href="#" class="logo">
+                    <img src="img/branco.png" alt="Editora Dinâmica" class="logo-image logo-white" />
+                    <img src="img/vermelho.png" alt="Editora Dinâmica" class="logo-image logo-red" />
+                </a>
+
+                <ul class="nav-menu" id="nav-menu">
+                     <li><a href="index.html"><img class="icone_home" src="./img/botao_home.png" alt="" srcset=""></a></li>
+                        <li><a href="estante.html">Estante Virtual</a></li>
+                        <li><a href="colecoes.html">Coleções</a></li>
+                        <li><a href="formacao.html">Formações</a></li>
+                        <li><a href="distribuidores.html">Distribuidores</a></li>
                         <li><a href="contato.html">Contato</a></li>
                 </ul>
-                <div class="mobile-menu" id="mobileMenu">⋮</div>
-            </nav>
-        </div>
-        <div class="menu-overlay" id="menuOverlay"></div>
-    </header>
 
-    <main>
-        <section class="hero-title-section">
-            <div class="hero-title-container">
-                <div class="title-content">
-                    <h1 class="main-title">Contato</h1>
-                    <a href="#contato" class="title-button">Fale Conosco</a>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </header>
+
+        <!-- HOME -->
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Entre em Contato</h1>
+                    <p>
+                        Estamos prontos para atender você. Escolha o meio de comunicação mais conveniente.
+                    </p>
+                    <div class="cta-buttons">
+                       
+                        <a href="#sobre" class="btn btn-secondary">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </a> 
+                    </div>
                 </div>
-                
-                <div class="contact-animation">
-                    <div class="woman-calling">
-                        <div class="woman-head">
-                            <div class="woman-hair"></div>
-                            <div class="woman-nose"></div>
-                        </div>
-                        <div class="woman-neck"></div>
-                        <div class="woman-body"></div>
-                        <div class="woman-arm">
-                            <div class="woman-hand"></div>
-                            <div class="phone">
-                                <div class="phone-reflection"></div>
+
+                <div class="hero-visual">
+                    <div class="magic-book-scene">
+                        <!-- Livro realista na parte inferior -->
+                        <div class="realistic-book">
+                            <!-- Sombra do livro -->
+                            <div class="book-shadow"></div>
+
+                            <!-- Página esquerda -->
+                            <div class="book-left-page">
+                                <div class="page-texture"></div>
+                                <div class="page-content">
+                                    <div class="text-lines">
+                                        <div class="text-line short"></div>
+                                        <div class="text-line medium"></div>
+                                        <div class="text-line long"></div>
+                                        <div class="text-line medium"></div>
+                                        <div class="text-line short"></div>
+                                        <div class="text-line long"></div>
+                                        <div class="text-line medium"></div>
+                                        <div class="text-line short"></div>
+                                    </div>
+                                </div>
+                                <div class="page-edge-shadow"></div>
+                            </div>
+
+                            <!-- Página direita -->
+                            <div class="book-right-page">
+                                <div class="page-texture"></div>
+                                <div class="page-content">
+                                    <div class="text-lines">
+                                        <div class="text-line medium"></div>
+                                        <div class="text-line long"></div>
+                                        <div class="text-line short"></div>
+                                        <div class="text-line medium"></div>
+                                        <div class="text-line long"></div>
+                                        <div class="text-line short"></div>
+                                        <div class="text-line medium"></div>
+                                        <div class="text-line long"></div>
+                                    </div>
+                                </div>
+                                <div class="page-edge-shadow"></div>
+                            </div>
+
+                            <!-- Lombada/Miolo do livro -->
+                            <!-- <div class="book-spine">
+                                <div class="spine-texture"></div>
+                                <div class="spine-shadow"></div>
+                            </div> -->
+
+                            <!-- Páginas empilhadas -->
+                            <div class="book-pages-stack">
+                                <div class="page-layer layer-1"></div>
+                                <div class="page-layer layer-2"></div>
+                                <div class="page-layer layer-3"></div>
+                                <div class="page-layer layer-4"></div>
                             </div>
                         </div>
-                        
-                        <div class="speech-bubble bubble-1">Olá!</div>
-                        <div class="speech-bubble bubble-2">Como posso ajudar?</div>
-                        
-                        <div class="signal-wave wave-1"></div>
-                        <div class="signal-wave wave-2"></div>
-                        <div class="signal-wave wave-3"></div>
+
+                        <!-- Feixe de luz subindo do livro -->
+                        <div class="light-beam">
+                            <div class="beam-core"></div>
+                            <div class="beam-glow"></div>
+                            <div class="beam-particles">
+                                <div class="light-particle"></div>
+                                <div class="light-particle"></div>
+                                <div class="light-particle"></div>
+                                <div class="light-particle"></div>
+                                <div class="light-particle"></div>
+                                <div class="light-particle"></div>
+                                <div class="light-particle"></div>
+                                <div class="light-particle"></div>
+                                <div class="light-particle"></div>
+                                <div class="light-particle"></div>
+                            </div>
+                        </div>
+
+                        <!-- Letras e elementos flutuando na parte superior -->
+                        <div class="floating-content">
+                            <div class="floating-letters">
+                                <span class="magic-letter" style="--delay: 0s; --x: -60px; --y: -80px">📞</span>
+                                <span class="magic-letter" style="--delay: 0.3s; --x: 40px; --y: -120px">📞</span>
+                                <span class="magic-letter" style="--delay: 0.6s; --x: -20px; --y: -160px">📞</span>
+                            </div>
+
+                             <div class="floating-numbers">
+                                <span class="magic-number" style="--delay: 0.4s; --x: -100px; --y: -90px">💬</span>
+                                <span class="magic-number" style="--delay: 1s; --x: 100px; --y: -130px">💬</span>
+                                <span class="magic-number" style="--delay: 1.6s; --x: -50px; --y: -170px">💬</span>
+                            </div> 
+
+                             <div class="floating-symbols">
+                                <span class="magic-symbol" style="--delay: 0.7s; --x: -70px; --y: -110px">📧</span>
+                                <span class="magic-symbol" style="--delay: 1.3s; --x: 50px; --y: -150px">📧</span>
+                                <span class="magic-symbol" style="--delay: 1.9s; --x: -30px; --y: -190px">📧</span>
+                            </div> 
+
+                            <div class="floating-icons">
+                                <span class="magic-icon" style="--delay: 0.5s; --x: -90px; --y: -120px">💬</span>
+                                <span class="magic-icon" style="--delay: 1.1s; --x: 80px; --y: -140px">💬</span>
+                                <span class="magic-icon" style="--delay: 1.7s; --x: -60px; --y: -180px">💬</span>
+                            </div>
+                        </div>
+
+                        <!-- Efeito de brilho ambiente -->
+                        <div class="ambient-glow"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact-section" id="contato">
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h2>Entre em Contato</h2>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <div>
-                            <h3>E-mail</h3>
-                            <p>contato@dinamica.com.br</p>
+
+
+        <!-- ENTRE EM CONTATO -->
+        <section class="contact fade-in" id="contato">
+            <div class="container">
+                <!-- <div class="section-header">
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <p class="section-subtitle">
+                        Estamos prontos para atender você. Escolha o meio de comunicação mais conveniente.
+                    </p>
+                </div> -->
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Informações de Contato</h3>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Endereço</h4>
+                                <p>Fortaleza, Ceará<br />Brasil</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>(85) 3032-5726<br />Segunda a Sexta: 8h às 17h</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p>editoradinamica@hotmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>(85) 99618-6824</p>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">📱</div>
-                        <div>
-                            <h3>Telefone</h3>
-                            <p>(85) 99999-0000</p>
-                        </div>
+
+                    <div class="contact-form">
+                        <h3>Envie uma Mensagem</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Nome Completo</label>
+                                <input type="text" id="name" class="form-control" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" class="form-control" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Assunto</label>
+                                <input type="text" id="subject" class="form-control" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" class="form-control" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Enviar Mensagem
+                            </button>
+                        </form>
                     </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div>
-                            <h3>Endereço</h3>
-                            <p>Rua das Editoras, 123<br>Fortaleza - CE</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">🕒</div>
-                        <div>
-                            <h3>Horário</h3>
-                            <p>Segunda à Sexta<br>8:00 às 18:00</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <h3>Envie sua Mensagem</h3>
-                    <form>
-                        <div class="form-group">
-                            <label for="nome">Nome *</label>
-                            <input type="text" id="nome" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">E-mail *</label>
-                            <input type="email" id="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="telefone">Telefone</label>
-                            <input type="tel" id="telefone">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="assunto">Assunto *</label>
-                            <input type="text" id="assunto" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="mensagem">Mensagem *</label>
-                            <textarea id="mensagem" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn">Enviar Mensagem</button>
-                    </form>
                 </div>
             </div>
         </section>
 
-         <!-- FOOTER -->
+        <!-- FOOTER -->
         <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <!-- <div class="logo-icon"></div> -->
-                    <!-- <div class="logo-text">Dinâmica</div> -->
-                    <img class="logofooter" src="./img/branco.png" alt="" srcset="" />
+            <!-- Background educacional -->
+            <div class="educational-background">
+                <!-- Letras flutuantes -->
+                <div class="floating-letter" style="left: 5%; animation-delay: 0s">A</div>
+                <div class="floating-letter large" style="left: 15%; animation-delay: 3s">B</div>
+                <div class="floating-letter small" style="left: 25%; animation-delay: 1s">C</div>
+                <div class="floating-letter" style="left: 35%; animation-delay: 5s">D</div>
+                <div class="floating-letter large" style="left: 45%; animation-delay: 2s">E</div>
+                <div class="floating-letter small" style="left: 55%; animation-delay: 7s">F</div>
+                <div class="floating-letter" style="left: 65%; animation-delay: 4s">G</div>
+                <div class="floating-letter large" style="left: 75%; animation-delay: 6s">H</div>
+                <div class="floating-letter small" style="left: 85%; animation-delay: 1.5s">I</div>
+                <div class="floating-letter" style="left: 95%; animation-delay: 8s">J</div>
+
+                <div class="floating-letter small" style="left: 8%; animation-delay: 10s">K</div>
+                <div class="floating-letter" style="left: 18%; animation-delay: 12s">L</div>
+                <div class="floating-letter large" style="left: 28%; animation-delay: 9s">M</div>
+                <div class="floating-letter" style="left: 38%; animation-delay: 14s">N</div>
+                <div class="floating-letter small" style="left: 48%; animation-delay: 11s">O</div>
+                <div class="floating-letter" style="left: 58%; animation-delay: 16s">P</div>
+                <div class="floating-letter large" style="left: 68%; animation-delay: 13s">Q</div>
+                <div class="floating-letter small" style="left: 78%; animation-delay: 15s">R</div>
+                <div class="floating-letter" style="left: 88%; animation-delay: 17s">S</div>
+                <div class="floating-letter" style="left: 98%; animation-delay: 19s">T</div>
+
+                <!-- Números -->
+                <div class="floating-letter small" style="left: 12%; animation-delay: 21s">1</div>
+                <div class="floating-letter" style="left: 32%; animation-delay: 23s">2</div>
+                <div class="floating-letter large" style="left: 52%; animation-delay: 20s">3</div>
+                <div class="floating-letter" style="left: 72%; animation-delay: 25s">4</div>
+                <div class="floating-letter small" style="left: 92%; animation-delay: 22s">5</div>
+
+                <!-- Livros didáticos -->
+                <div class="floating-book" style="left: 10%; animation-delay: 2s">📚</div>
+                <div class="floating-book large" style="left: 30%; animation-delay: 8s">📖</div>
+                <div class="floating-book" style="left: 50%; animation-delay: 5s">📘</div>
+                <div class="floating-book large" style="left: 70%; animation-delay: 12s">📗</div>
+                <div class="floating-book" style="left: 90%; animation-delay: 15s">📙</div>
+
+                <div class="floating-book" style="left: 20%; animation-delay: 18s">📔</div>
+                <div class="floating-book large" style="left: 40%; animation-delay: 10s">📒</div>
+                <div class="floating-book" style="left: 60%; animation-delay: 25s">📕</div>
+                <div class="floating-book" style="left: 80%; animation-delay: 7s">📰</div>
+
+                <!-- Elementos educacionais -->
+                <div class="floating-pencil" style="left: 15%; animation-delay: 4s">✏️</div>
+                <div class="floating-pencil" style="left: 45%; animation-delay: 14s">🖊️</div>
+                <div class="floating-pencil" style="left: 75%; animation-delay: 9s">✂️</div>
+                <div class="floating-pencil" style="left: 85%; animation-delay: 20s">📐</div>
+            </div>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>Editora Dinâmica</h4>
+                        <p>
+                            Transformando a educação há mais de 20 anos com materiais didáticos de qualidade para toda a
+                            educação básica.
+                        </p>
+                        <div class="social-links">
+                            <a
+                                href="https://www.instagram.com/editoradinamica/"
+                                class="social-link"
+                                aria-label="Instagram"
+                                target="_blank"
+                            >
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a
+                                href="https://www.facebook.com/editora.dinamica"
+                                class="social-link"
+                                aria-label="Facebook"
+                                target="_blank"
+                            >
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a
+                                href="https://www.youtube.com/@TVDINAMICADINAMICA/videos"
+                                class="social-link"
+                                aria-label="YouTube"
+                                target="_blank"
+                            >
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a
+                                href="https://api.whatsapp.com/send?phone=5585996186824"
+                                class="social-link"
+                                aria-label="WhatsApp"
+                                target="_blank"
+                            >
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Navegação</h4>
+                        <ul>
+                            <li><a href="#inicio">Início</a></li>
+                            <li><a href="#sobre">Sobre Nós</a></li>
+                            <li><a href="#colecoes">Coleções</a></li>
+                            <li><a href="#distribuidores">Distribuidores</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Níveis Educacionais</h4>
+                        <ul>
+                            <li><a href="#">Educação Infantil</a></li>
+                            <li><a href="#">Ensino Fundamental</a></li>
+                            <li><a href="#">Ensino Médio</a></li>
+                            <li><a href="#">EJA</a></li>
+                            <li><a href="#">Psicopedagogia</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Recursos</h4>
+                        <ul>
+                            <li><a href="http://estantedinamica.epizy.com/">Estante Virtual</a></li>
+                            <li><a href="#">Formações</a></li>
+                            <li><a href="#">Tabela de Preços</a></li>
+                            <li><a href="#">Materiais Digitais</a></li>
+                        </ul>
+                    </div>
                 </div>
-
-                <!-- <p class="footer-description">
-                Transformando a educação através de materiais didáticos inovadores e de qualidade. 
-                Explore nosso catálogo completo de livros educacionais para todas as idades.
-            </p> -->
-
-                <!-- <nav class="footer-links">
-                <a href="#" class="footer-link">Início</a>
-                <a href="#catalogs" class="footer-link">Estante Virtual</a>
-                <a href="#" class="footer-link">Coleções</a>
-                <a href="#" class="footer-link">Distribuidores</a>
-                <a href="#" class="footer-link">Contato</a>
-            </nav> -->
-
-                <!-- <div class="social-icons">
-                <a href="#" class="social-icon">📧</a>
-                <a href="#" class="social-icon">📱</a>
-                <a href="#" class="social-icon">🌐</a>
-                <a href="#" class="social-icon">📍</a>
-            </div> -->
 
                 <div class="footer-bottom">
                     <p>&copy; 2025 Editora Dinâmica. Todos os direitos reservados.</p>
-                    <!-- <p>Educação que transforma, conhecimento que inspira.</p> -->
                 </div>
             </div>
         </footer>
 
-    </main>
-
-    <script src="./js/contato.js"></script>
-</body>
+        <script src="./js/script.js"></script>
+    </body>
 </html>

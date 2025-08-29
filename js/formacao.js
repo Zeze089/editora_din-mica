@@ -10,6 +10,8 @@ function toggleMenu() {
     document.body.style.overflow = navMenu.classList.contains("active") ? "hidden" : "";
 }
 
+
+
 mobileMenu.addEventListener("click", toggleMenu);
 menuOverlay.addEventListener("click", toggleMenu);
 
@@ -21,6 +23,8 @@ document.querySelectorAll(".nav-menu a").forEach((link) => {
         }
     });
 });
+
+
 
 // Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -35,6 +39,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
 });
 
+
+
 // Header background on scroll
 window.addEventListener("scroll", function () {
     const header = document.querySelector("header");
@@ -44,6 +50,8 @@ window.addEventListener("scroll", function () {
         header.style.background = "linear-gradient(135deg, #e53e3e 0%, #c53030 100%)";
     }
 });
+
+
 
 // Formations Carousel
 let currentFormationIndex = 0;
@@ -62,12 +70,12 @@ function showFormation(index) {
     currentFormationIndex = index;
 }
 
-function nextFormation() {
+function nextFormation1() {
     const nextIndex = (currentFormationIndex + 1) % totalFormations;
     showFormation(nextIndex);
 }
 
-function prevFormation() {
+function prevFormation1() {
     const prevIndex = (currentFormationIndex - 1 + totalFormations) % totalFormations;
     showFormation(prevIndex);
 }
@@ -106,4 +114,5 @@ function handleFormationSwipe() {
             prevFormation();
         }
     }
-}
+};
+

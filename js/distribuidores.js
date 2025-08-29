@@ -1,3 +1,4 @@
+/*
 // Mobile menu toggle
 const mobileMenu = document.getElementById("mobileMenu");
 const navMenu = document.querySelector(".nav-menu");
@@ -22,6 +23,8 @@ document.querySelectorAll(".nav-menu a").forEach((link) => {
     });
 });
 
+*/
+
 // Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
@@ -34,6 +37,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         }
     });
 });
+
 
 // Toggle distribuidor details
 function toggleDetails(button) {
@@ -52,6 +56,8 @@ function toggleDetails(button) {
     }
 }
 
+
+/*
 // Header background on scroll
 window.addEventListener("scroll", function () {
     const header = document.querySelector("header");
@@ -61,3 +67,16 @@ window.addEventListener("scroll", function () {
         header.style.background = "linear-gradient(135deg, #e53e3e 0%, #c53030 100%)";
     }
 });
+
+*/
+
+// Header scroll effect
+const header = document.getElementById("header");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+

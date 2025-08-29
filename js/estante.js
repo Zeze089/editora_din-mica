@@ -35,6 +35,9 @@
             }
         }
 
+
+        
+
         // Mover carrossel
         function moveCarousel(category, direction) {
             const state = carouselStates[category];
@@ -50,6 +53,9 @@
             
             updateCarousel(category);
         }
+
+        
+
 
         // Ir para slide específico
         function goToSlide(category, index) {
